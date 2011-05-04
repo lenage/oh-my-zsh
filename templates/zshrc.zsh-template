@@ -1,9 +1,18 @@
+#tty1登录后自动启动openbox
+if [[ -z "$DISPLAY" ]] && [[ $(tty) = /dev/tty1 ]]; then
+      xinit
+      logout
+fi
+. $HOME/.bashrc
+#. $HOME/.bashrc_alias
+export MOZ_DISABLE_PANGO=1
+source ~/.local/bin/bashmarks.sh
 # Path to your oh-my-zsh configuration.
 export ZSH=$HOME/.oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
-export ZSH_THEME="rgm"
+export ZSH_THEME="robbyrussell"
 
 # Set to this to use case-sensitive completion
 # export CASE_SENSITIVE="true"
@@ -19,7 +28,7 @@ export ZSH_THEME="rgm"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby pip github rails)
+plugins=(git ruby rails)
 
 source $ZSH/oh-my-zsh.sh
 
