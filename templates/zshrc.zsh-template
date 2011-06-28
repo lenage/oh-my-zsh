@@ -1,5 +1,5 @@
-. $HOME/.bashrc
-source ~/.git-flow-completion.zsh
+#. $HOME/.bashrc
+source ~/.bash_profile
 #. $HOME/.bashrc_alias
 export MOZ_DISABLE_PANGO=1
 # Path to your oh-my-zsh configuration.
@@ -26,5 +26,6 @@ export ZSH_THEME="arrow"
 plugins=(git ruby rails)
 
 source $ZSH/oh-my-zsh.sh
+source ~/.git-flow-completion.zsh
 
 # Customize to your needs...
