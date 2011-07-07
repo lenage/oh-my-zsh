@@ -84,7 +84,7 @@ alias mv='mv -i -v'
 alias rm='rm -v'                    # 'rm -i' prompts for every file
 alias ln='ln -i'
 alias chown='chown --preserve-root'
-alias chmod='chmod --preserve-root'
+#alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
 
 #grep's color output
