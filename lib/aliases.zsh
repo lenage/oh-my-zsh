@@ -9,6 +9,9 @@ alias -- -='cd -'
 # Super user
 alias _='sudo'
 
+#pacman-color 
+alias pacman='pacman-color'
+
 #alias g='grep -in'
 
 # Show history
@@ -23,4 +26,16 @@ alias afind='ack-grep -il'
 
 alias x=extract
 
-alias -s pdf=mupdf
+alias -s pdf=llpp
+
+#alias for todo.txt
+function t(){
+    if [ $# -eq 0 ];then
+        todo.sh -d ~/.todo.cfg ls
+    else
+        todo.sh -d ~/.todo.cfg $*
+    fi
+}
+
+#remind GUI optput setting
+alias c='remind -w$(tput cols) -mc+lc2 ~/.reminders'
