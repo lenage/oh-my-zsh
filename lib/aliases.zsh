@@ -9,6 +9,9 @@ alias -- -='cd -'
 # Super user
 alias _='sudo'
 
+#pacman-color 
+alias pacman='pacman-color'
+
 #alias g='grep -in'
 
 # Show history
@@ -23,7 +26,7 @@ alias afind='ack-grep -il'
 
 alias x=extract
 
-#alias -s pdf=mupdf
+#alias -s pdf=llpp
 
 #thePlant linode server plan768
 alias twitter='ssh -NfD 7070 intern@74.207.253.177' 
