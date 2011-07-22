@@ -83,9 +83,9 @@ alias cp='cp -v'
 alias mv='mv -i -v'
 alias rm='rm -v'                    # 'rm -i' prompts for every file
 alias ln='ln -i'
-alias chown='chown --preserve-root'
+#alias chown='chown --preserve-root'
 #alias chmod='chmod --preserve-root'
-alias chgrp='chgrp --preserve-root'
+#alias chgrp='chgrp --preserve-root'
 
 #grep's color output
 
@@ -93,5 +93,13 @@ alias chgrp='chgrp --preserve-root'
 #python 2to3
 alias pserver='python2 -m SimpleHTTPServer'
 
-#todo.txt
-#alias t='todo -d ~/.todo.cfg ls'
+#alias for todo.txt
+function t(){
+   if [ $# -eq 0 ];then
+       sh ~/bin/todo.sh ls
+   else
+       sh ~/bin/todo.sh $*
+   fi
+}
+
+alias c='remind -w$(tput cols) -mc+lc2 ~/.reminders'
