@@ -32,7 +32,7 @@ export ZSH_THEME="fishy"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git ruby rails)
+plugins=(git ruby rails3 lighthouse github bundler)
 
 source $ZSH/oh-my-zsh.sh
 
