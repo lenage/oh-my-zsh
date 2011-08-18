@@ -28,9 +28,6 @@ alias x=extract
 
 #alias -s pdf=llpp
 
-#thePlant linode server plan768
-alias twitter='ssh -NfD 7070 intern@74.207.253.177' 
-alias theplant='ssh intern@74.207.253.177' 
 
 ####################
 #fork from .bashrc #
@@ -39,7 +36,6 @@ alias theplant='ssh intern@74.207.253.177'
 # Check for an interactive session
 
 alias ls='ls --color=auto'
-alias amzn_ssh_aimb3202f25b='ssh ubuntu@ec2-75-101-223-158.compute-1.amazonaws.com -v'
 
 # modified commands
 alias diff='colordiff'              # requires colordiff package
@@ -106,3 +102,6 @@ function t(){
 }
 
 alias c='remind -w$(tput cols) -mc+lc2 ~/.reminders'
+
+#uninstall Xcode
+alias uninstallxcode='sudo /Developer/Library/uninstall-devtools --mode=all'
